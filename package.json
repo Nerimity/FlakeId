@@ -1,11 +1,12 @@
 {
   "name": "@nerimity/flakeid",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Time based 64-bit unique id generator, inspired by Twitter id (snowflake)",
   "main": "dist/flakeid.js",
   "module": "dist/flakeid.mjs",
   "scripts": {
-    "build": "rollup -c",
+    "build": "rollup -c && pnpm create-dec",
+    "create-dec": "tsc --allowJs -d --emitDeclarationOnly dist/flakeid.js dist/flakeid.mjs",
     "prepublishOnly": "npm run build"
   },
   "repository": {
@@ -26,7 +27,8 @@
   "license": "MIT",
   "homepage": "https://github.com/Nerimity/FlakeId#readme",
   "devDependencies": {
-    "rollup": "^4.1.4"
+    "rollup": "^4.1.4",
+    "typescript": "^5.2.2"
   },
   "bugs": {
     "url": "https://github.com/Nerimity/FlakeId/issues"
