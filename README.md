@@ -15,8 +15,8 @@ npm install @nerimity/flakeid
 # Usage
 Initializtion
 ```js
-const {FlakeId} = require('flakeid');
-// import {FlakeId} from 'flakeid';
+import {FlakeId} from 'flakeid';
+// const {FlakeId} = require('flakeid');
 
 //initiate flake
 const flake = new FlakeId({
