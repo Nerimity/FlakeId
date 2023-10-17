@@ -1,6 +1,6 @@
 {
   "name": "@nerimity/flakeid",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Time based 64-bit unique id generator, inspired by Twitter id (snowflake)",
   "main": "dist/flakeid.js",
   "module": "dist/flakeid.mjs",
