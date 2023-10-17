@@ -1,5 +1,6 @@
 import {hexToDec} from './hex2dec';
 
+
 export class FlakeId {
   /**
    * Constructor for the class.
