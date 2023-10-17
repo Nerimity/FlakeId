@@ -1,6 +1,13 @@
 import {hexToDec} from './hex2dec';
 
-export default class FlakeId {
+export class FlakeId {
+  /**
+   * Constructor for the class.
+   *
+   * @param {Object} options - The options object for the constructor.
+   * @param {number} options.mid - The mid value for the constructor. Default is 1.
+   * @param {number} options.timeOffset - The time offset value for the constructor. Default is 0.
+   */
   constructor(options) {
     options = options || {};
     this.seq = 0;
@@ -8,6 +15,11 @@ export default class FlakeId {
     this.timeOffset = options.timeOffset || 0;
     this.lastTime = 0;
   }
+  /**
+   * Generates a unique identifier based on the current time, sequence number, and machine ID.
+   *
+   * @return {string} The generated unique identifier.
+   */
   gen() {
     let time = Date.now();
 

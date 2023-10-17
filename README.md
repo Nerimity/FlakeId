@@ -1,3 +1,6 @@
+# Fork of FlakeId
+Fork was made to it work with esm and cjs.
+
 # FlakeId
 A tiny module to generate time based 64-bit unique id, inspired by Twitter id (snowflake).
 
@@ -5,21 +8,15 @@ FlakeId takes 42 bit of timestamp, 10 bit of machine id (or any random number yo
 
 # Installation
 
-For Node
 ```js
-npm install flakeid
-```
-
-For Browser
-Include js file
-```html
-<script src="https://unpkg.com/flakeid/dist/flakeid.min.js"></script>
+npm install @nerimity/flakeid
 ```
 
 # Usage
 Initializtion
 ```js
-const FlakeId = require('flakeid'); /* on node js only */
+const {FlakeId} = require('flakeid');
+// import {FlakeId} from 'flakeid';
 
 //initiate flake
 const flake = new FlakeId({
